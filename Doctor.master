@@ -1,0 +1,192 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Doctor.master.cs" Inherits="Doctor" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta name="description" content="responsive clothing store template" />
+    <meta name="author" content="afriq yasin ramadhan" />
+    <link rel="shortcut icon" href="img/favicon.png" />
+
+    <title>Medicineshop</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/stylex.css" rel="stylesheet" type="text/css" />
+    <!-- Custom styles for this template -->
+    
+    <link href="css/responsive.css" rel="stylesheet" />
+
+
+
+
+  <link href="images/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css?1440654276" />
+  <link rel="stylesheet" type="text/css" href="css/browser.css" />
+  <link rel="stylesheet" type="text/css" href="css/responsivecss.css" />
+  <link rel="stylesheet" type="text/css" href="css/flexslider.css"  />
+  <link rel="stylesheet" type="text/css" href="css/style.css"  />
+  <link href='css/css.css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'/>
+  <script type="text/javascript" src="js/modernizr.custom.js"></script>
+  <script type="text/javascript" src="js/javascript.js"></script>
+    
+
+  <!--<script type="text/javascript" src="js/jquery.color.js"></script>
+  <script type="text/javascript" src="js/ga.js"></script>-->
+  <script type="text/javascript" src="js/jquery.hoverIntent.js"></script>
+  <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#clotheshop-navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- /.navbar-collapse -->
+      </div>
+    </nav>
+    <!-- end:navbar -->
+
+    <!-- begin:content -->
+    <div class="container">
+      <!-- begin:logo -->
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <div class="logo">
+            <h1><a href="default.aspx">Medicine<span>shop</span> </a></h1>
+            <p>Get Appointment</p>
+          </div>
+        </div>
+      </div> 
+      <!-- end:logo -->
+
+      <!-- begin:nav-menus -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="nav-menus">
+            <ul class="nav nav-pills" style="background:#060;">
+
+            <li ><a href="doctor.aspx" title='Home'>Home</a></li>
+            <li ><a href="Treatment.aspx" title='Treatment'> Upload Treatment</a></li>
+			<li ><a href="Show Appointment.aspx" title='Appointments'>Show Appointments</a></li>
+           <li ><a href="Logout.aspx" title='Logout'>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- end:nav-menus -->
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <!-- begin:footer -->
+      <div class="row">
+        <div class="col-md-12 footer">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="widget">
+                <h3><span>Contact Info</span></h3>
+                <address>
+                  No. 22, Hoshiarpur Road, Jalandhar, India<br/>
+                  Call Us : (0181) 2211005<br/>
+                  Email : rajesh@gmail.com<br/>
+                </address>
+              </div>
+            </div>
+
+            <div class="col-md-2 col-sm-6">
+              <div class="widget">
+                <h3><span>India</span></h3>
+                <ul class="list-unstyled list-star">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+              <div class="widget">
+                <h3><span>Privacy & Legal</span></h3>
+                <ul class="list-unstyled list-star">
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Delivery & Refund Policy</a></li>
+                </ul>
+              </div>
+            </div>
+            
+             <div class="col-md-2 col-sm-6">
+              <div class="widget">
+                <h3><span>Florist</span></h3>
+                <ul class="list-unstyled list-star">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="Register Doctor.aspx">Register</a></li>
+                </ul>
+              </div>
+            </div>
+
+             <div class="col-md-2 col-sm-6">
+              <div class="widget">
+                <h3><span>Follow Us</span></h3>
+                <ul class="list-unstyled list-star">
+                    <li><a href="#"><img src="img/facebook_icon.png" alt="" /></a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- end:footer -->
+
+      <!-- begin:copyright -->
+      <div class="row">
+        <div class="col-md-12 copyright">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 copyright-left">
+              <p>Copyright &copy; Medicalshop 2012-2015. All right reserved.</p>
+            </div>
+            <div class="col-md-6 col-sm-6 copyright-right">
+              <ul class="list-unstyled list-social">
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end:copyright -->
+
+    </div>
+    <!-- end:content -->
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/script.js"></script>
+        
+</body>
+</html>
